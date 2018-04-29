@@ -1,0 +1,530 @@
+/*Default.
+*******************************************************************************************************************************/
+*,pre,figure,dl,dd,dt,ul,ol,h1,h2,h3,h4,h5,p,form,html,body{margin:0;padding:0}img{border:0;vertical-align:top;-ms-interpolation-mode:bicubic}body{line-height:1}ol,ul{list-style-type:none}:focus{outline:none}table{border-collapse:collapse;border-spacing:0}.clear{clear:both;height:1px;font-size:1px;visibility:hidden}ins{text-decoration:none}input,textarea,select{margin:0}a{cursor:pointer}
+h1{letter-spacing: 0.3px;}
+.cfix:before,.cfix:after{content:"";display:table}.cfix:after{clear:both}
+figure{padding:0;margin:0;-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0}
+fieldset{margin:0;padding:0;-webkit-margin-start:0;-webkit-margin-end:0;-webkit-padding-before:0;-webkit-padding-start:0;-webkit-padding-end:0;-webkit-padding-after:0;border:0}
+textarea{overflow:auto}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}
+button[disabled],input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular.woff') format('woff'),
+        url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansExtraBold';
+    src: url('../fonts/OpenSans-ExtraBold.eot');
+    src: url('../fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+        url('../fonts/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../fonts/Montserrat-Bold.eot');
+    src: url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Bold.woff') format('woff'),
+        url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratLight';
+    src: url('../fonts/Montserrat-Light.eot');
+    src: url('../fonts/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat-Light.woff') format('woff'),
+        url('../fonts/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+	font-size: 14px;
+	font-family: 'OpenSansRegular';
+}
+
+body > section {
+	min-width: 320px;
+}
+
+.top {
+	height: 100vh;
+	max-height: 600px;
+	background-color: #dbdbdb;
+}
+
+.top .container {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.top .top__header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding-top: 30px;
+}
+
+.top .top__header .logo {
+	font-size: 1em;
+	font-family: 'MontserratBold';
+	color: #60606e;
+	text-align: left;
+	margin: 0;
+	padding-left: 10px;
+}
+
+.top .top__header>div {
+	padding: 0;
+}
+
+.top .top__header>div:nth-child(2) {
+	text-align: right;
+}
+
+.top .top__header .top__menu {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.top .top__header .top__menu img {
+	width: 20px;
+}
+
+.top .row {
+	text-align: center;
+}
+
+.top .title {
+	font-family: 'MontserratBold';
+	font-size: 2.6em;
+	color: #60606e;
+}
+
+.top .description {
+	font-family: 'MontserratBold';
+	font-size: 1em;
+	color: #60606e;
+}
+
+.texts {
+	padding: 140px 0;
+}
+
+.texts .texts__article-title,
+.benefits .benefits__title,
+.team .team__title {
+	font-size: 2.1em;
+	font-family: 'MontserratBold';
+	color: #60606e;
+	position: relative;
+	display: inline-block;
+}
+
+.texts .texts__article-title:after,
+.benefits .benefits__title:after,
+.team .team__title:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	width: 65px;
+	height: 6px;
+	background-color: #7beec7;
+}
+
+.texts .texts__article-subtitle {
+	font-size: 1em;
+	font-family: 'OpenSansExtraBold';
+	color: #60606e;
+	line-height: 4;
+	display: block;
+}
+
+.texts .texts__article-description,
+.benefits .benefits__description,
+.benefits .benefits__list-item-description,
+.team .team__description,
+.testimonials-clients .testimonials__info {
+	font-size: 1em;
+	font-family: 'OpenSansRegular';
+	color: #60606e;
+	line-height: 2;
+}
+
+.benefits,
+.team {
+	text-align: center;
+}
+
+.benefits .benefits__description,
+.team .team__description {
+	padding: 10px 17%;
+}
+
+.benefits .benefits__list,
+.team .team__list {
+	text-align: left;
+	padding: 60px 0 80px;
+}
+
+.benefits .benefits__list-item,
+.team__list-item {
+	margin: 1.2% 0;
+}
+
+.benefits .benefits__list-item-title {
+	font-family: 'MontserratBold';
+	font-size: 1.3em;
+	color: #60606e;
+	margin: 0 0 20px 50px;
+	position: relative;
+}
+
+.benefits .benefits__list-item .benefits__list-item-title:before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: -50px;
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/icon-mobile.png);
+	background-size: cover;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.benefits .benefits__list-item:nth-child(2) .benefits__list-item-title:before {
+	background-image: url(../images/icon-infinity.png);
+}
+
+.benefits .benefits__list-item:nth-child(3) .benefits__list-item-title:before {
+	background-image: url(../images/icon-wordpress.png);
+}
+
+.benefits .benefits__list-item:nth-child(4) .benefits__list-item-title:before {
+	background-image: url(../images/icon-shop.png);
+}
+
+.benefits .benefits__list-item:nth-child(5) .benefits__list-item-title:before {
+	background-image: url(../images/icon-lines.png);
+}
+
+.benefits .benefits__list-item:nth-child(6) .benefits__list-item-title:before {
+	background-image: url(../images/icon-support.png);
+}
+
+.team .team__list {
+	padding: 60px 0 0;
+}
+
+.team .team__list-item {
+
+}
+
+.team .team__list-item img {
+	width: 100%;
+	min-width: 100%;
+}
+
+.bar .container {
+	background-color: #efeff0;
+	position: relative;
+}
+
+.bar .bar__info {
+	font-family: 'OpenSansRegular';
+	font-size: 1.1em;
+	font-style: italic;
+	color: #60606e;
+	padding: 5% 3%;
+	margin: 0;
+	width: 75%;
+}
+
+.bar .bar__link {
+	font-family: 'MontserratBold';
+	font-size: 1em;
+	padding: 15px 25px;
+	background-color: #7beec7;
+	color: #fff;
+	text-decoration: none;
+	position: absolute;
+	top: 50%;
+	right: 4%;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.testimonials-clients {
+	text-align: center;
+	padding: 140px 0 170px;
+}
+
+.testimonials-clients .testimonials {
+	margin-bottom: 40px;
+}
+
+.testimonials-clients .testimonials__info {
+	padding: 25px 0;
+}
+
+.testimonials-clients .testimonials__link {
+	font-family: 'MontserratBold';
+	font-size: 1em;
+	padding: 10px 15px;
+	background-color: #7beec7;
+	color: #fff;
+	text-decoration: none;
+}
+
+.testimonials-clients .clients__list-item {
+	margin: 15px 0;
+}
+
+.testimonials-clients .clients__list-item-image {
+	width: 100%;
+	min-width: 100%;
+	border: 1px solid #d9d9d9;
+}
+
+.newsletter {
+	background-color: #7beec7;
+	padding: 40px 0;
+}
+
+.newsletter .work-together {
+	margin-bottom: 40px;
+}
+
+.newsletter .work-together__title {
+	font-family: 'MontserratBold';
+	font-size: 2.1em;
+	color: #fff;
+	margin-top: 0;
+	line-height: 1.6;
+}
+
+.newsletter .work-together__link {
+	font-family: 'MontserratBold';
+	font-size: 0.8em;
+	padding: 12px 20px;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 10px;
+	background-color: #fff;
+	color: #7beec7;
+}
+
+.newsletter .form {
+	background-color: #fff;
+	padding: 25px 40px;
+}
+
+.newsletter .form .row {
+	padding-right: 0;
+	margin: 0;
+}
+
+.newsletter .form__title {
+	color: #60606e;
+	font-family: 'MontserratBold';
+	font-size: 1.7em;
+	margin: 0;
+	line-height: 1.5;
+}
+
+.newsletter .form__description {
+	font-family: 'OpenSansRegular';
+	font-size: 1.1em;
+	color: #afafaf;
+	padding: 2% 0 4%;
+}
+
+.newsletter .form__input_text {
+	color: #cdcdcd;
+	font-family: 'MontserratBold';
+	font-size: 0.9em;
+	padding: 15px;
+	border: 1px solid #e5e5e5;
+	outline: none;
+	box-sizing: border-box;
+	border-radius: 0;
+}
+
+.newsletter .form__input_submit {
+	font-family: 'MontserratBold';
+	font-size: 0.9em;
+	border: 1px solid #7beec7;
+	outline: none;
+	background-color: #7beec7;
+	color: #fff;
+	padding: 15px;
+	box-sizing: border-box;
+	border-radius: 0;
+}
+
+::-webkit-input-placeholder {color:#cdcdcd;}
+::-moz-placeholder          {color:#cdcdcd;}/* Firefox 19+ */
+:-moz-placeholder           {color:#cdcdcd;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#cdcdcd;}
+
+.bottom {
+	padding: 45px 0;
+}
+
+.bottom .bottom__list-menu {
+	list-style: none;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.bottom .bottom__list-menu-item {
+	padding-right: 30px;
+	float: left;
+}
+
+.bottom .bottom__list-menu-item-link {
+	font-family: 'OpenSansRegular';
+	font-size: 1em;
+	color: #9a9a9a;
+	text-decoration: none;
+	position: relative;
+}
+
+.bottom .bottom__list-menu-item-link:after {
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 2px;
+	background-color: #d1d1d1;
+	top: 50%;
+	right: -18px;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	-o-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.bottom .bottom__list-menu-item:last-child .bottom__list-menu-item-link:after {
+	display: none;
+}
+
+.bottom .bottom__paragraph {
+	text-align: right;
+	font-family: 'OpenSansRegular';
+	font-size: 1em;
+	color: #9a9a9a;
+	margin-bottom: 20px;
+}
+
+.bottom .bottom__list-social {
+	list-style: none;
+	text-align: right;
+	margin: 0;
+}
+
+.bottom .bottom__list-social-item {
+	padding: 0 0 0 15px;
+	display: inline-block;
+}
+
+.bottom .bottom__list-social-item-link {
+	display: inline-block;
+	width: 14px;
+}
+
+.bottom .bottom__list-social-item-link img {
+	width: 100%;
+	min-width: 100%;
+}
+
+
+
+@media screen and (max-width: 991px) {
+
+	.benefits .benefits__list-item-title {
+		height: 35px;
+	}
+
+	.bottom .bottom__paragraph,
+	.bottom .bottom__list-social {
+		text-align: left;
+	}
+
+	.bottom .bottom__list-social-item {
+		padding: 0 15px 0 0;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	
+	.texts {
+		padding: 70px 0;
+	}
+
+	.bar .bar__info {
+		width: 65%;
+	}
+
+	.testimonials-clients {
+		padding: 70px 0 80px;
+	}
+
+	.newsletter .form {
+		padding: 25px 15px;
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+
+	.benefits .benefits__list, 
+	.team .team__list {
+		padding: 40px 0 10px;
+	}
+
+	.benefits .benefits__list-item {
+		margin-bottom: 15px;
+	}
+
+	.benefits .benefits__list-item-title {
+		height: auto;
+	}
+
+	.benefits .benefits__description, .team .team__description {
+		padding: 10px 0;
+	}
+
+	.bar .bar__info {
+		width: 50%;
+	}
+
+	.bottom .bottom__list-social-item-link {
+		width: 20px;
+	}
+
+}
